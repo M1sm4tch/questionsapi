@@ -1,0 +1,50 @@
+{
+    "quizzes": [
+      {
+        "quiz_id": 1,
+        "category": "sport",
+        "questions": [
+          {
+            "question_id": 1,
+            "question_text": "Which one is the correct team name in NBA?",
+            "options": [
+              {"option_id": 1, "option_text": "New York Bulls"},
+              {"option_id": 2, "option_text": "Los Angeles Kings"},
+              {"option_id": 3, "option_text": "Golden State Warriros"},
+              {"option_id": 4, "option_text": "Houston Rockets"}
+            ],
+            "correct_option_id": 4
+          }
+        ]
+      },
+      {
+        "quiz_id": 2,
+        "category": "maths",
+        "questions": [
+          {
+            "question_id": 2,
+            "question_text": "5 + 7 = ?",
+            "options": [
+              {"option_id": 5, "option_text": "10"},
+              {"option_id": 6, "option_text": "11"},
+              {"option_id": 7, "option_text": "12"},
+              {"option_id": 8, "option_text": "13"}
+            ],
+            "correct_option_id": 7
+          },
+          {
+            "question_id": 3,
+            "question_text": "12 - 8 = ?",
+            "options": [
+              {"option_id": 9, "option_text": "1"},
+              {"option_id": 10, "option_text": "2"},
+              {"option_id": 11, "option_text": "3"},
+              {"option_id": 12, "option_text": "4"}
+            ],
+            "correct_option_id": 12
+          }
+        ]
+      }
+    ]
+  }
+  
