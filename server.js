@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const questionRouter = require('./routes/questionRoutes');
 const dotenv = require('dotenv');
+const userRoutes = require('./routes/userroutes');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
@@ -27,7 +28,9 @@ app.use(cors({ origin: '*' }));
 
 app.use(bodyParser.json());
 
-app.use('/api', questionRouter);
+app.use('/user', userRoutes); // User routes
+
+app.use('/api', questionRouter); // Questions api routes
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);

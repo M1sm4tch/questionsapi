@@ -2,12 +2,14 @@
 const express = require('express');
 const router = express.Router();
 const questionController = require('../controller/questioncontroller.js')
+const authmiddleware = require('../middleware/authmiddleware')
+
 //Question CRUD operations Routes
-router.get('/questions', questionController.getAllQuestions);
+router.get('/questions',authmiddleware.requireAuth, questionController.getAllQuestions);
 
 router.post('/addquestion',questionController.addQuestion);
 
-router.get('/question/:id', questionController.getQuestionbyId);
+router.get('/question/:id',questionController.getQuestionbyId);
 
 router.put('/question/update/:id', questionController.updateQuestionById);
 
